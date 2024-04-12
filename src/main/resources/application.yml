@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  r2dbc:
+    url: r2dbc:pool:postgres://localhost:5432/spring_flex_security
+    username: postgres
+    password: password
+  flyway:
+    url: jdbc:postgresql://localhost:5432/spring_flex_security
+    locations: classpath:db/migration
+
+
+
+
